@@ -23,7 +23,7 @@ html{
     overflow-x: hidden;
 }
 body{
-    background: var(--bg-color);
+    background: linear-gradient(to right, rgb(65, 123, 143), rgb(4, 4, 4));
     color: var(--text-color);
 }
 section{
@@ -65,16 +65,18 @@ section{
 }
 #menu-icon{
     font-size: 3.6rem;
-    color: var;
+    color: var(--main-color);
 }
 .home{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.home-img img{
-    width: 20vw;
+.box img{
+    /* border: 10px solid linear-gradient(to left, rgb(65, 123, 143), rgb(4, 4, 4)); */
+    width: 25vw;
     animation: floatImage 4s ease-in-out infinite;
+    box-shadow: 0 25px 50px #0ef;
 
 }
 @keyframes floatImage{
@@ -146,11 +148,16 @@ span{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: var(--second-bg-color);
+    background:linear-gradient(to left, rgb(65, 123, 143), rgb(4, 4, 4));;
 }
 .about-img{
     width: 35vw;
     
+}
+.about-img img{
+    width: 20vw;
+    animation: floatImage 4s ease-in-out infinite;
+
 }
 .heading{
     text-align: center;
@@ -179,7 +186,7 @@ span{
 }
 .services-container .services-box{
     flex: 1 1 30rem;
-    background: var(--second-bg-color);
+    background: linear-gradient(to left, rgb(65, 123, 143), rgb(4, 4, 4));
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
@@ -201,8 +208,8 @@ span{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
-.portfolo{
-    background: var(--second-bg-color);
+.portfolio{
+    background: linear-gradient(to left, rgb(65, 123, 143), rgb(4, 4, 4));
 }
 .portfolio h2{
     margin-bottom: 4rem;
@@ -311,7 +318,7 @@ span{
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: linear-gradient(to left, rgb(65, 123, 143), rgb(4, 4, 4));;
 }
 .footer-text p{
     font-size: 1.6rem;
